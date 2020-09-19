@@ -36,6 +36,7 @@ a{
 
 .flexrow{
   display: flex;
+  align-items:center;
   justify-content: center;
 }
 
@@ -63,8 +64,24 @@ a{
   border-radius: 0px 0px 20px 20px;
 }
 
+.my-stack-title{
+  color: #474747;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.my-stack-others{
+  color: #474747;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.other-stack{
+  color: #243171;
+  font-size: 15px;
+}
+
 .card-body{
-  margin: 100px 40px 0px 0px;
+  margin: 100px 20px 0px 20px;
   height: 250px;
   width: 350px;
   border-radius: 20px;
@@ -94,6 +111,23 @@ a{
   color: #FFFFFF;
   font-size: 22px;
   line-height: 45px;
+}
+
+.stack-icons{
+  max-height: 70px;
+  border-radius: 20px;
+  margin: 0px 15px;
+}
+
+.stack-icons-container{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.caption{
+  color: #474747;
+  display: block;
 }
 
 .inline{
