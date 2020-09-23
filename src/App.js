@@ -1,6 +1,7 @@
 //REACT IMPORTS
 import React from 'react';
 //FILE IMPORTS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from "./components/navbar/navbar"
 import ProfileCard from "./components/card/profile-card"
@@ -13,15 +14,22 @@ const App = (props) => {
   return (
     <Container className="App">
         <Navbar/>
-        <Container className={"flexrow"}>
-          <Row md={2}>
-            <Col md={8}><ProfileCard/></Col>
-            <Col md={8}><SoftSkillsCard/></Col>
+        <Container style={{display: "flex", justifyContent: "center"}}>
+          <Row className={"profile-container"} style={{maxWidth: "80vw"}} >
+            <Col xs="auto" sm="true" md="true" className="center-block">
+              <ProfileCard/>
+            </Col>
+            <Col xs="auto" sm="true" md="true" className="center-block">
+              <SoftSkillsCard/>
+            </Col>
           </Row>
         </Container>
-        <div>
-          <MyStack/>
-        </div>
+        <Container>
+            <MyStack/>
+        </Container>
+        <Container>
+            
+        </Container>
     </Container>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="navbar sticky shadow">
+    <div className="navbar sticky blueshadow">
         <div className={'flexstart'}>
             <a href="#ASD">ASD-DEVELOPER</a>
         </div>
