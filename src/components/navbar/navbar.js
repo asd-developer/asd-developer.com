@@ -1,19 +1,20 @@
 import React from 'react';
+import {StickyNavbar, FlexStart, FlexEnd, NavTitleLink, Link, Contact} from './Navbar.elements'
 
 const Navbar = () => {
   return (
-    <div className="navbar sticky blueshadow">
-        <div className={'flexstart'}>
-            <a href="#ASD">ASD-DEVELOPER</a>
-        </div>
-        <div className={'flexend'}>
-            <a href="#ABOUT" className={'horizontalspacing'}>About</a>
-            <a href="#PROJECTS" className={'horizontalspacing'}>Projects</a>
-            <a href="#PUBLISHED" className={'horizontalspacing'}>Published Work</a>
-            <a href="#SERVICES" className={'horizontalspacing'}>Services</a>
-            <a href="#CONTACTS" className={'contactbt'}>Contact Me</a>
-        </div>
-    </div>
+    <StickyNavbar>
+        <FlexStart>
+            <NavTitleLink href="#ASD">ASD-DEVELOPER</NavTitleLink>
+        </FlexStart>
+        <FlexEnd>
+            <Link href="#ABOUT">About</Link>
+            <Link href="#PROJECTS">Projects</Link>
+            <Link href="#PUBLISHED">Published Work</Link>
+            <Link href="#SERVICES">Services</Link>
+            <Contact href="#CONTACTS">Contact Me</Contact>
+        </FlexEnd>
+    </StickyNavbar>
   );
 }
 

@@ -45,18 +45,6 @@ a{
   justify-content: center;
 }
 
-.flexstart{
-  justify-content: flex-start;
-}
-
-.flexstart{
-  justify-content: flex-end;
-}
-
-.horizontalspacing{
-  margin: 0px 15px;
-}
-
 .contactbt{
   background: #6C40FF 0% 0% no-repeat padding-box;
   color: #FFFFFF;
