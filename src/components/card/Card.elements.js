@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CardBody = styled.div`
     margin: 0px 20px;
     background-color: ${props => props.BgColor};
-    height: 45vh;
+    height: 20rem;
     width: 30vw;
     padding: 0px;
     border-radius: 20px;
