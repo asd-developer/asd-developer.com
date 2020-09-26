@@ -17,27 +17,27 @@ export const StickyNavbar = styled.nav`
     z-index: 10;
     box-shadow: 4px 5px 10px #050FFF29;
     border-radius: 0px 0px 3rem 3rem;
-`
+`;
 
 export const FlexStart = styled.div`
     justify-content: flex-start;
-`
+`;
 
 export const FlexEnd = styled.div`
     justify-content: flex-end;
-`
+`;
 
 export const NavTitleLink = styled.a`
     color: #474747;
     text-decoration: none;
     font-size: 1.2em;
-`
+`;
 
 export const Link = styled.a`
     margin: 0rem 1rem;
     color: #272727;
     text-decoration: none;
-`
+`;
 
 export const Contact = styled.a`
     background: #6C40FF 0% 0% no-repeat padding-box;
@@ -46,4 +46,4 @@ export const Contact = styled.a`
     padding: 0.5rem 1.5rem;
     text-decoration: none;
     font-size: 1em
-`
+`;

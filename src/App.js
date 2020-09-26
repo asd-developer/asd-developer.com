@@ -7,7 +7,7 @@ import SoftSkillsCard from "./components/card/softskills-card"
 import MyStack from './components/stack/my-stack'
 //STYLED COMPONENTS
 import {GlobalStyles} from './globalStyles'
-import { MainContainer, CardContainer} from './app.elements'
+import { MainContainer, CardContainer, StackContainer} from './app.elements'
 
 const App = (props) => {
   return (
@@ -17,10 +17,10 @@ const App = (props) => {
               <ProfileCard/>
               <SoftSkillsCard/>
         </CardContainer>
-        <div>
+        <StackContainer>
             <MyStack/>
-        </div>
-    <GlobalStyles/>
+        </StackContainer>
+      <GlobalStyles/>
     </MainContainer>
   );
 }
