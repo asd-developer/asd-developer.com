@@ -7,7 +7,12 @@ export const Container = styled.div`
     h2{
         color: #474747;
         font-size: 25px;
-        margin-top: 20px;
+        margin-bottom: -0.5rem;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        color: #474747
     }
 `
 
@@ -15,7 +20,8 @@ export const IconRow = styled.div`
     width: 100%;
     vertical-align: top;
     text-align: center;
-
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     div{
         display:inline-block;
     }

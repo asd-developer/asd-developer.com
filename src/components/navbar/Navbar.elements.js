@@ -4,7 +4,7 @@ export const StickyNavbar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6em;
+    height: 5em;
     background-color: #FFFFFF;
     padding: 0em 4em 0em 4em;
     position: fixed;

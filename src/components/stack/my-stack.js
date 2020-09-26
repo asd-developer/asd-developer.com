@@ -4,7 +4,7 @@ import { Container, IconRow, } from './stack.elements'
 const MyStack = () => {
   return (
     <Container>
-      <h2 className={'my-stack-title'}>My Stack:</h2>
+      <h2>My Stack:</h2>
       <IconRow>
         <div>
           <img src="html icon.png" className={"stack-icons blueshadow"} alt="HTML" />
@@ -32,8 +32,8 @@ const MyStack = () => {
         </div>
       </IconRow>
       <div>
-        <h2 className={'my-stack-others'}>Others:</h2>
-        <h3 className={'other-stack'}>Webpack, DevTools, Sass, Bootstrap, PHP, Jest, mySQL, CICD, Docker</h3>
+        <h2>Others:</h2>
+        <h3>Webpack, DevTools, Sass, Bootstrap, PHP, Jest, mySQL, CICD, Docker</h3>
       </div>
     </Container>
   );

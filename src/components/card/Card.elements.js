@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const CardBody = styled.div`
     margin: 0px 20px;
     background-color: ${props => props.BgColor};
-    height: 18rem;
-    min-height: 17rem;
+    height: 16rem;
+    min-height: 16rem;
     width: 25rem;
     min-width: 25rem;
     padding: 0px;
@@ -18,7 +18,7 @@ export const CardBody = styled.div`
     li{
         display: flex;
         color: #474747;
-        font-size: 1.4em;
+        font-size: 1.25em;
     }
     p{
         margin: 0px;
