@@ -4,7 +4,7 @@ export const StickyNavbar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4.5em;
+    height: 6em;
     background-color: #FFFFFF;
     padding: 0em 4em 0em 4em;
     position: fixed;
@@ -13,10 +13,10 @@ export const StickyNavbar = styled.nav`
     left: 0;
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
+    width: 75%;
     z-index: 10;
-    box-shadow: 0.5rem 0.8rem 1rem #050FFF29;
-    border-radius: 0px 0px 1rem 1rem;
+    box-shadow: 4px 5px 10px #050FFF29;
+    border-radius: 0px 0px 3rem 3rem;
 `
 
 export const FlexStart = styled.div`
@@ -28,10 +28,9 @@ export const FlexEnd = styled.div`
 `
 
 export const NavTitleLink = styled.a`
-    margin: 0rem 1rem;
-    color: #272727;
+    color: #474747;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
 `
 
 export const Link = styled.a`

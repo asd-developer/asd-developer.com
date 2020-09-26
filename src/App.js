@@ -5,20 +5,23 @@ import Navbar from "./components/navbar/navbar"
 import ProfileCard from "./components/card/profile-card"
 import SoftSkillsCard from "./components/card/softskills-card"
 import MyStack from './components/stack/my-stack'
-
+//STYLED COMPONENTS
+import {GlobalStyles} from './globalStyles'
+import { MainContainer, CardContainer} from './app.elements'
 
 const App = (props) => {
   return (
-    <div className="App">
+    <MainContainer>
         <Navbar/>
-        <div style={{display: "flex", justifyContent: "center"}}>
+        <CardContainer>
               <ProfileCard/>
               <SoftSkillsCard/>
-        </div>
+        </CardContainer>
         <div>
             <MyStack/>
         </div>
-    </div>
+    <GlobalStyles/>
+    </MainContainer>
   );
 }
 

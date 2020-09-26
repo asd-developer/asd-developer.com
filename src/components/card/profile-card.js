@@ -1,20 +1,17 @@
 import React from 'react';
+import { CardBody,CardTitle } from './Card.elements'
 
 const ProfileCard = () => {
   return (
-        <div className={'card-body profile-bgcolor blueshadow'} sm="3" md="6">
-            <div>
-                <h2 className={'card-title profile-titlebgcolor'}>Who is ASD-DEVELOPER?</h2>
-            </div>
-            <div className={'card-body-text'}>
-                <ul style={{margin: "15px auto", padding: "0px"}}>
-                    <li className={'inline'}><p className={"profile-text"}><span className={"id-title"}>Name:</span>André Duarte</p></li>
-                    <li className={'inline'}><p className={"profile-text"}><span className={"id-title"}>Title:</span>Front-end Developer</p></li>
-                    <li className={'inline'}><p className={"profile-text"}><span className={"id-title"}>Birthday:</span>21 September, 1999</p></li>
-                    <li className={'inline'}><p className={"profile-text"}><span className={"id-title"}>From:</span>Portugal</p></li>
+        <CardBody BgColor={"#FFC498"}>
+            <CardTitle TitleBgColor={"#FFA25D"}>Who is ASD-DEVELOPER?</CardTitle>
+                <ul>
+                    <li><p><span>Name: </span>André Duarte</p></li>
+                    <li><p><span>Title: </span>Front-end Developer</p></li>
+                    <li><p><span>Birthday: </span>21 September, 1999</p></li>
+                    <li><p><span>From: </span>Portugal</p></li>
                 </ul>
-            </div>
-        </div>
+        </CardBody>
   );
 }
 

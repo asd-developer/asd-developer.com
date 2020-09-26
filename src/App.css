@@ -131,23 +131,6 @@ a{
   display: block;
 }
 
-.inline{
-  display: flex;
-}
-
-li{
-  color: #474747;
-  font-size: 20px;
-  padding-left: 35px;
-}
-
-.id-title{
-  color: #474747;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 0px;
-}
-
 .profile-text{
   margin: 0px;
   line-height: 40px;
