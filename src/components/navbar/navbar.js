@@ -11,7 +11,6 @@ const Navbar = () => {
             <Link href="#ABOUT">About</Link>
             <Link href="#PROJECTS">Projects</Link>
             <Link href="#PUBLISHED">Published Work</Link>
-            <Link href="#SERVICES">Services</Link>
             <Contact href="#CONTACTS">Contact Me</Contact>
         </FlexEnd>
     </StickyNavbar>

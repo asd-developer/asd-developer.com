@@ -1,16 +1,18 @@
 import styled from 'styled-components'
 
 export const CardBody = styled.div`
-    margin: 0px 20px;
     background-color: ${props => props.BgColor};
-    height: 16rem;
+    margin: 0px auto;
+    height: 100%;
     min-height: 16rem;
-    width: 25rem;
-    min-width: 25rem;
+    width: 90%;
     padding: 0px;
     border-radius: 20px;
     box-shadow: 4px 5px 10px #050FFF29;
-
+    @media screen and (max-width: 850px){
+      grid-template-columns: 80%;
+      margin-bottom: 1rem;
+    }
     ul{
         margin: 20px auto;
         padding-left: 2rem;
@@ -29,6 +31,7 @@ export const CardBody = styled.div`
         font-size: 0.8em;
         font-weight: normal;
     }
+    
 `
 export const CardTitle = styled.h1`
     background-color: ${props => props.TitleBgColor};
@@ -37,7 +40,7 @@ export const CardTitle = styled.h1`
     padding-left: 2rem;
     font-weight: normal;
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 4rem;
 `
 

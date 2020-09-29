@@ -3,7 +3,7 @@ import { CardBody,CardTitle } from './Card.elements'
 
 const ProfileCard = () => {
   return (
-        <CardBody BgColor={"#FFC498"}>
+        <CardBody BgColor={"#FFC498"} style={{alignSelf: "end",}}>
             <CardTitle TitleBgColor={"#FFA25D"}>Who is ASD-DEVELOPER?</CardTitle>
                 <ul>
                     <li><p><span>Name: </span>André Duarte</p></li>

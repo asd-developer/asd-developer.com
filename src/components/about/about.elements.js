@@ -3,11 +3,13 @@ import styled from 'styled-components'
 export const AboutContainer = styled.div`
     margin: 0px auto;
     background-color: white;
-    height: 19rem;
-    width: 100%;
+    height: 115%;
+    width: 85%;
     box-shadow: 4px 5px 10px #050FFF29;
     border-radius: 80px;
-
+    @media screen and (max-width: 850px){
+      width: 98%;
+    }
     h1{
         padding-top: 1.5rem;
         text-align: center;
@@ -23,7 +25,7 @@ export const AboutContainer = styled.div`
 `
 
 export const HobbiesContainer = styled.div`
-    margin: 0px auto;
+    margin: 5rem auto;
     h1{
         padding-top: 1.5rem;
         font-size: 1.6em;
@@ -32,6 +34,7 @@ export const HobbiesContainer = styled.div`
     }
 `
 export const HobbySquares = styled.div`
+    display: inline-block;
     width: 100%;
     vertical-align: top;
     text-align: center;

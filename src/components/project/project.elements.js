@@ -1,13 +1,10 @@
 import styled from 'styled-components'
 
 export const PostsContainer = styled.div`
-    display: block;
-    margin: 1rem auto 1rem auto;
+    margin: 1rem auto;
     background-color: white;
     height: auto;
-    min-height: 19rem;
-    width: 25rem;
-    min-width: 25rem;
+    width: 95%;
     padding: 0px;
     border-radius: 20px;
     box-shadow: 4px 5px 10px #050FFF29;
@@ -35,6 +32,7 @@ export const PostsContainer = styled.div`
         line-height: 0.5em;
         font-size: 1em;
     }
+
 `
 export const PaddingLeft = styled.div`
     padding-left:1rem;
@@ -48,9 +46,18 @@ export const Title = styled.h2`
 
 export const Posts = styled.div`
     display: grid;
+    width: 100%;
     grid-template-columns: 50% 50%;
+    margin: 0px auto;
+    @media screen and (max-width: 500px){
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
 
     @media screen and (max-width: 1100px){
         grid-template-columns: 100%;
+    }
+    @media only screen and (min-device-width : 1700px){
+        grid-template-columns: 33% 33% 33%;
     }
 `

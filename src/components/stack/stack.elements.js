@@ -17,7 +17,9 @@ export const Container = styled.div`
 `
 
 export const IconRow = styled.div`
+    display: inline-block;
     width: 100%;
+    justify-content: center;
     vertical-align: top;
     text-align: center;
     margin-top: 1rem;

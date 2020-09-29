@@ -1,20 +1,26 @@
 import styled from "styled-components"
 
-export const MainContainer = styled.section`
-  margin: 6rem auto 0px auto;
-  width: 75%;
+export const MainContainer = styled.div`
+
 `
 export const Container = styled.div`
-  height: 65vh;
-  width: 100%;
-  @media (height: 1700px){
-    height: 100vh;
+  display: grid;
+  margin: 6rem auto 0px auto;
+  justify-content: center;
+  grid-template-columns: 75%;
+  @media screen and (max-width: 1100px){
+    grid-template-columns: 100%;
   }
 `
 
 export const CardContainer = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 40%;
     justify-content: center;
+
+    @media screen and (max-width: 850px){
+      grid-template-columns: 100%;
+  }
 `
 
 export const StackContainer = styled.div`
