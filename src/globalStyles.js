@@ -3,6 +3,9 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyles = createGlobalStyle`
   body {
     background-color: #EAF2F6;
-    font-family: 'Lexend Deca', 'sans-serif';
+    @font-face {
+      font-family: 'Lexend Deca', sans-serif;
+      src: local(Lexend-Deca),url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    }
   }
 `
