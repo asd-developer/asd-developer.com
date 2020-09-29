@@ -5,8 +5,11 @@ export const MainContainer = styled.section`
   width: 75%;
 `
 export const Container = styled.div`
-  height: 100vh;
+  height: 65vh;
   width: 100%;
+  @media (height: 1700px){
+    height: 100vh;
+  }
 `
 
 export const CardContainer = styled.div`
