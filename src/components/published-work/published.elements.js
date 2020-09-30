@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PostsContainer = styled.a`
     text-decoration: none;
-    margin: 1rem auto;
+    margin: 0rem auto;
     font-family: 'Lexend Deca', sans-serif;
     background-color: white;
     height: auto;
@@ -19,9 +19,10 @@ export const PostsContainer = styled.a`
     }
     img{
         display:block;
-        margin-bottom: -1px;
+        object-fit: cover;
         border-radius: 0px 0px 20px 20px;
         width:100%;
+        height: 100%;
     }
 `
 

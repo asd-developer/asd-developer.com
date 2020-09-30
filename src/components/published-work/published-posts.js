@@ -7,7 +7,7 @@ const PublishedPosts = (props) =>{
         <>
             <PostsContainer target="_blank" href={props.link}>
                 <h1>{props.Title}</h1>
-                <img src={props.image} alt="Design Portfolio"/>
+                <img src={props.image} alt="published work"/>
             </PostsContainer>
         </>
       );
