@@ -5,6 +5,7 @@ export const AboutContainer = styled.div`
     background-color: white;
     height: 115%;
     width: 85%;
+    font-family: 'Lexend Deca', sans-serif;
     box-shadow: 4px 5px 10px #050FFF29;
     border-radius: 80px;
     @media screen and (max-width: 850px){
