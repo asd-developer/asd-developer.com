@@ -13,6 +13,7 @@ const Hobbies = () => {
                 <img src="skate.svg" alt="Skate"/>
                 <img src="travel.svg" alt="Travel"/>
                 <img src="movies.svg" alt="Cinema"/>
+                <img src="music.svg" alt="Music"/>
             </div>
             </HobbySquares>
         </HobbiesContainer>

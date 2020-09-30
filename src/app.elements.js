@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const MainContainer = styled.div`
-
+  font-family: 'Lexend Deca', sans-serif;
 `
 export const Container = styled.div`
   display: grid;

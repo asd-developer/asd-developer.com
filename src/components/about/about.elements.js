@@ -40,7 +40,6 @@ export const HobbySquares = styled.div`
     vertical-align: top;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
     div{
         display:inline-block;
     }
@@ -53,6 +52,7 @@ export const HobbySquares = styled.div`
         border-radius: 20px;
         margin: 0rem 1.5rem;
         box-shadow: 4px 5px 10px #050FFF29;
+        margin-bottom: 1rem;
     }
 `
 

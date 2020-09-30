@@ -8,6 +8,7 @@ import MyStack from './components/stack/my-stack'
 import About from './components/about/about'
 import Hobbies from './components/about/hobbies'
 import Projects from './components/project/project'
+import Published from './components/published-work/published'
 //STYLED COMPONENTS
 import {GlobalStyles} from './globalStyles'
 import { MainContainer, CardContainer, StackContainer, Container} from './app.elements'
@@ -31,6 +32,9 @@ const App = (props) => {
         </Container>
         <Container>
           <Projects/>
+        </Container>
+        <Container>
+          <Published/>
         </Container>
       <GlobalStyles/>
     </MainContainer>

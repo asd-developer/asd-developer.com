@@ -7,7 +7,6 @@ export const PostsContainer = styled.a`
     background-color: white;
     height: auto;
     width: 95%;
-    padding: 0px;
     border-radius: 20px;
     box-shadow: 4px 5px 10px #050FFF29;
     h1{
@@ -19,25 +18,11 @@ export const PostsContainer = styled.a`
         padding-left: 1rem;
     }
     img{
-        margin-top: -0.4rem;
+        display:block;
+        margin-bottom: -1px;
+        border-radius: 0px 0px 20px 20px;
         width:100%;
     }
-    h2{
-        margin-top: 0.5rem;
-        color: #6e6e6e;
-        line-height: 0.5em;
-        font-size: 0.8em;
-    }
-    p{
-        margin-top: 0.5rem;
-        color: #474747;
-        line-height: 0.5em;
-        font-size: 1em;
-    }
-
-`
-export const PaddingLeft = styled.div`
-    padding-left:1rem;
 `
 
 export const Title = styled.h2`

@@ -5,7 +5,7 @@ export const CardBody = styled.div`
     background-color: ${props => props.BgColor};
     margin: 0px auto;
     height: 100%;
-    min-height: 16rem;
+    min-height: 18rem;
     width: 90%;
     padding: 0px;
     border-radius: 20px;

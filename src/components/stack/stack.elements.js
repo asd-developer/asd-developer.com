@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    font-family: 'Lexend Deca', sans-serif;
     margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
@@ -18,7 +19,6 @@ export const Container = styled.div`
 
 export const IconRow = styled.div`
     display: inline-block;
-    font-family: 'Lexend Deca', sans-serif;
     width: 100%;
     justify-content: center;
     vertical-align: top;
@@ -27,6 +27,7 @@ export const IconRow = styled.div`
     margin-bottom: 0.5rem;
     div{
         display:inline-block;
+        margin-bottom: 1rem;
     }
 
     img{
