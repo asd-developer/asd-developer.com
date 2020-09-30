@@ -18,8 +18,8 @@ export const Container = styled.div`
 
 export const IconRow = styled.div`
     display: inline-block;
-    width: 100%;
     font-family: 'Lexend Deca', sans-serif;
+    width: 100%;
     justify-content: center;
     vertical-align: top;
     text-align: center;
