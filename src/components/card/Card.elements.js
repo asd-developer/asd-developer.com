@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const CardBody = styled.div`
+    font-family: 'Lexend Deca', sans-serif;
     background-color: ${props => props.BgColor};
     margin: 0px auto;
     height: 100%;
@@ -29,7 +30,6 @@ export const CardBody = styled.div`
     span{
         color: #474747;
         font-size: 0.8em;
-        font-weight: normal;
     }
     
 `
