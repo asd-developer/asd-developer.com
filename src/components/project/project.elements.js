@@ -15,6 +15,7 @@ export const PostsContainer = styled.a`
         font-weight: normal;
         text-align: left;
         font-size: 1.2em;
+        line-height: 3rem;
         color: #474747;
         padding-left: 1rem;
     }
@@ -36,8 +37,9 @@ export const PostsContainer = styled.a`
     }
 
 `
-export const PaddingLeft = styled.div`
+export const Padding = styled.div`
     padding-left:1rem;
+    padding-bottom: 1rem;
 `
 
 export const Title = styled.h2`

@@ -13,6 +13,10 @@ export const Container = styled.div`
   }
 `
 
+export const AboutContainer = styled.div`
+  margin: 10rem auto;
+`
+
 export const CardContainer = styled.div`
     display: grid;
     grid-template-columns: 40% 40%;

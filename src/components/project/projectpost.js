@@ -1,5 +1,5 @@
 import React from 'react';
-import {PostsContainer,PaddingLeft} from './project.elements'
+import {PostsContainer,Padding} from './project.elements'
 
 const ProjectPosts = (props) =>{
     return (
@@ -7,10 +7,10 @@ const ProjectPosts = (props) =>{
             <PostsContainer target="_blank" href={props.link}>
                 <h1>{props.Title}</h1>
                 <img src={props.image} alt="Design Portfolio"/>
-                <PaddingLeft>
+                <Padding>
                     <h2>Stack:</h2>
                     <p>{props.stack}</p>
-                </PaddingLeft>
+                </Padding>
             </PostsContainer>
         </>
       );

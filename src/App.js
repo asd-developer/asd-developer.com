@@ -11,7 +11,7 @@ import Projects from './components/project/project'
 import Published from './components/published-work/published'
 //STYLED COMPONENTS
 import {GlobalStyles} from './globalStyles'
-import { MainContainer, CardContainer, StackContainer, Container} from './app.elements'
+import { MainContainer, CardContainer, StackContainer, Container, AboutContainer} from './app.elements'
 
 const App = (props) => {
   return (
@@ -26,10 +26,10 @@ const App = (props) => {
               <MyStack/>
           </StackContainer>
         </Container>
-        <Container>
+        <AboutContainer>
           <About/>
           <Hobbies/>
-        </Container>
+        </AboutContainer>
         <Container>
           <Projects/>
         </Container>

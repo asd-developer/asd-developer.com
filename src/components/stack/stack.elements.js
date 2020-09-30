@@ -12,7 +12,9 @@ export const Container = styled.div`
         text-align: center;
     }
     h3{
+        margin-top: 1rem;
         text-align: center;
+        text-height:2rem;
         color: #474747
     }
 `

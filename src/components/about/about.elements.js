@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const AboutContainer = styled.div`
     margin: 0px auto;
     background-color: white;
-    height: 115%;
+    height: 100%;
     width: 85%;
     font-family: 'Lexend Deca', sans-serif;
     box-shadow: 4px 5px 10px #050FFF29;
@@ -13,11 +13,14 @@ export const AboutContainer = styled.div`
     }
     h1{
         padding-top: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         color: #3848D6;
     }
     p{
         text-align: left;
+        line-height: 1.4rem;
         letter-spacing: 0px;
         color: #474747;
         padding-left: 3em;
