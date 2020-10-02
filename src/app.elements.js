@@ -14,7 +14,7 @@ export const Container = styled.div`
 `
 
 export const AboutContainer = styled.div`
-  margin: 10rem auto;
+  margin: 8rem auto;
 `
 
 export const CardContainer = styled.div`

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PostsContainer = styled.a`
     text-decoration: none;
-    margin: 1rem auto;
+    margin: 0rem auto 2rem auto;
     font-family: 'Lexend Deca', sans-serif;
     background-color: white;
     width: 95%;
@@ -21,7 +21,7 @@ export const PostsContainer = styled.a`
         object-fit: cover;
         border-radius: 0px 0px 20px 20px;
         width:100%;
-        height: 100%;
+        height: auto;
     }
 `
 
@@ -29,8 +29,12 @@ export const Title = styled.h2`
     font-family: 'Lexend Deca', sans-serif;
     color: #4C5391;
     text-align: left;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    h2{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
 `
 
 export const Posts = styled.div`

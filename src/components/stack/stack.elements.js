@@ -12,7 +12,8 @@ export const Container = styled.div`
         text-align: center;
     }
     h3{
-        margin-top: 1rem;
+        width: 90%;
+        margin: 1rem auto 0rem auto;
         text-align: center;
         text-height:2rem;
         color: #474747

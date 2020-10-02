@@ -25,7 +25,10 @@ const Published = (props) => {
 
   return (
     <>
-        <Title>Published Work:</Title>
+        <Title>
+          Published Work
+          <h2>(Click in any square to acess the published website.)</h2>
+        </Title>
         <Posts>
           {projects.map(project =>(
             <PublishedPosts Title={project.title} image={project.image} link={project.link} style={{height: "100%"}}/>

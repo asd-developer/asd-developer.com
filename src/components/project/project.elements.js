@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PostsContainer = styled.a`
     text-decoration: none;
-    margin: 1rem auto;
+    margin: 0rem auto 2rem auto;
     font-family: 'Lexend Deca', sans-serif;
     background-color: white;
     height: auto;
@@ -46,7 +46,12 @@ export const Title = styled.h2`
     font-family: 'Lexend Deca', sans-serif;
     color: #4C5391;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    h2{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
 `
 
 export const Posts = styled.div`

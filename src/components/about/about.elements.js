@@ -5,12 +5,12 @@ export const AboutContainer = styled.div`
     background-color: white;
     height: 100%;
     padding-bottom: 4rem;
-    width: 85%;
+    width: 55%;
     font-family: 'Lexend Deca', sans-serif;
     box-shadow: 4px 5px 10px #050FFF29;
     border-radius: 80px;
     @media screen and (max-width: 850px){
-      width: 98%;
+      width: 95%;
     }
     h1{
         padding-top: 1.5rem;
@@ -30,7 +30,8 @@ export const AboutContainer = styled.div`
 `
 
 export const HobbiesContainer = styled.div`
-    margin: 5rem auto;
+    margin: 1rem auto;
+    justify-content: center;
     h1{
         padding-top: 1.5rem;
         font-size: 1.6em;
@@ -39,9 +40,9 @@ export const HobbiesContainer = styled.div`
     }
 `
 export const HobbySquares = styled.div`
-    display: inline-block;
+    margin: 0px auto;
     width: 100%;
-    vertical-align: top;
+    vertical-align: center;
     text-align: center;
     margin-top: 1rem;
     div{
@@ -49,12 +50,13 @@ export const HobbySquares = styled.div`
     }
 
     img{
-        width: 3.5rem;
-        height: 3.5rem;
-        padding: 0.7rem;
+        width: 3rem;
+        height: 3rem;
+        max-height:70px;
+        padding: 0.6rem;
         background-color: #4C5391;
         border-radius: 20px;
-        margin: 0rem 1.5rem;
+        margin: 0rem 1rem;
         box-shadow: 4px 5px 10px #050FFF29;
         margin-bottom: 1rem;
     }

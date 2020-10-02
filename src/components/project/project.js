@@ -33,7 +33,10 @@ const Projects = (props) => {
 
   return (
     <>
-        <Title>Projects:</Title>
+        <Title>
+          Projects
+          <h2>(Click in any square to acess the GitHub page.)</h2>
+        </Title>
         <Posts>
           {projects.map(project =>(
             <ProjectPosts Title={project.title} image={project.image} stack={project.stack} link={project.link}/>

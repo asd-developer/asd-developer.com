@@ -8,12 +8,22 @@ const Hobbies = () => {
             <h1>My Hobbies:</h1>
             <HobbySquares>
             <div>
-                <img src="diving.svg" alt="Diving"/>
-                <img src="drone.svg" alt="Drone"/>
-                <img src="skate.svg" alt="Skate"/>
-                <img src="travel.svg" alt="Travel"/>
-                <img src="movies.svg" alt="Cinema"/>
-                <img src="music.svg" alt="Music"/>
+              <img src="diving.svg" alt="Diving"/>
+            </div>
+            <div>
+              <img src="drone.svg" alt="Drone"/>
+            </div>
+            <div>
+              <img src="skate.svg" alt="Skate"/>
+            </div>
+            <div>
+              <img src="travel.svg" alt="Travel"/>
+            </div>
+            <div>
+              <img src="movies.svg" alt="Cinema"/>
+            </div>
+            <div>
+              <img src="music.svg" alt="Music"/>
             </div>
             </HobbySquares>
         </HobbiesContainer>

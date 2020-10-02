@@ -5,13 +5,13 @@ const Navbar = () => {
   return (
     <StickyNavbar>
         <FlexStart>
-            <NavTitleLink href="#ASD">ASD-DEVELOPER</NavTitleLink>
+            <NavTitleLink href="#whois">ASD-DEVELOPER</NavTitleLink>
         </FlexStart>
         <FlexEnd>
-            <Link href="#ABOUT">About</Link>
-            <Link href="#PROJECTS">Projects</Link>
-            <Link href="#PUBLISHED">Published Work</Link>
-            <Contact href="#CONTACTS">Contact Me</Contact>
+            <Link href="#about">About</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="#published-work">Published Work</Link>
+            <Contact href="#contacts">Contact Me</Contact>
         </FlexEnd>
     </StickyNavbar>
   );
