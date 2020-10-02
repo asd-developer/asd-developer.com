@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import ProjectPosts from './published-posts'
+import PublishedPosts from './published-posts'
 import {Title, Posts} from './published.elements'
 
 const Published = (props) => {
@@ -28,7 +28,7 @@ const Published = (props) => {
         <Title>Published Work:</Title>
         <Posts>
           {projects.map(project =>(
-            <ProjectPosts Title={project.title} image={project.image} link={project.link}/>
+            <PublishedPosts Title={project.title} image={project.image} link={project.link} style={{height: "100%"}}/>
           ))}
         </Posts>
         

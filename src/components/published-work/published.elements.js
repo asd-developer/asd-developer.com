@@ -5,7 +5,6 @@ export const PostsContainer = styled.a`
     margin: 1rem auto;
     font-family: 'Lexend Deca', sans-serif;
     background-color: white;
-    height: auto;
     width: 95%;
     border-radius: 20px;
     box-shadow: 4px 5px 10px #050FFF29;
