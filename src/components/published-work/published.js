@@ -7,7 +7,7 @@ const Published = (props) => {
     [
       {
         title: "Design Portfolio", 
-        image: "design-portfolio.png",
+        image: "andredesign.png",
         link: "https://www.andresoaresduarte.com",
       },
       {
