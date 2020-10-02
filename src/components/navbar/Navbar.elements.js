@@ -15,6 +15,7 @@ export const StickyNavbar = styled.nav`
     margin-left: auto;
     width: 75%;
     z-index: 10;
+    font-family: 'Lexend Deca', sans-serif;
     box-shadow: 4px 5px 10px #050FFF29;
     border-radius: 0px 0px 3rem 3rem;
     @media screen and (max-width: 850px){

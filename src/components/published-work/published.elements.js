@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PostsContainer = styled.a`
     text-decoration: none;
-    margin: 0rem auto;
+    margin: 1rem auto;
     font-family: 'Lexend Deca', sans-serif;
     background-color: white;
     height: auto;
@@ -10,7 +10,7 @@ export const PostsContainer = styled.a`
     border-radius: 20px;
     box-shadow: 4px 5px 10px #050FFF29;
     h1{
-        padding-top: 0rem;
+        padding: 0.5rem 0rem;
         font-weight: normal;
         text-align: left;
         font-size: 1.2em;
@@ -31,6 +31,7 @@ export const Title = styled.h2`
     color: #4C5391;
     text-align: left;
     font-size: 1.8rem;
+    margin-bottom: 1rem;
 `
 
 export const Posts = styled.div`

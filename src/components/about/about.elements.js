@@ -4,6 +4,7 @@ export const AboutContainer = styled.div`
     margin: 0px auto;
     background-color: white;
     height: 100%;
+    padding-bottom: 4rem;
     width: 85%;
     font-family: 'Lexend Deca', sans-serif;
     box-shadow: 4px 5px 10px #050FFF29;
