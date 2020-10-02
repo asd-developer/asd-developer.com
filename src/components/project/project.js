@@ -7,13 +7,13 @@ const Projects = (props) => {
     [
       {
         title: "Book Tracking App", 
-        image: "design-portfolio.png",
+        image: "myreads.png",
         stack: "React, NodeJs, API",
         link: "https://github.com/asd-developer/MyReadsReactJsApp",
       },
       {
         title: "Mechanical Keyboard Builds", 
-        image: "design-portfolio.png",
+        image: "keyboardbuilds.png",
         stack: "React, NodeJs, MongoDB, Bootstrap",
       },
       {
