@@ -32,7 +32,7 @@ export const PostsContainer = styled.a`
     p{
         margin-top: 0.5rem;
         color: #474747;
-        line-height: 0.5em;
+        line-height: 0.9em;
         font-size: 1em;
     }
 
