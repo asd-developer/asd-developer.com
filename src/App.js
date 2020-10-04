@@ -9,6 +9,7 @@ import About from './components/about/about'
 import Hobbies from './components/about/hobbies'
 import Projects from './components/project/project'
 import Published from './components/published-work/published'
+import Contacts from './components/contacts/contacts'
 //STYLED COMPONENTS
 import {GlobalStyles} from './globalStyles'
 import { MainContainer, CardContainer, StackContainer, Container, AboutContainer} from './app.elements'
@@ -56,6 +57,13 @@ const App = (props) => {
           <ScrollableAnchor id={'published-work'}>
             <Container>
               <Published/>
+            </Container>
+          </ScrollableAnchor>
+        </ScrollableLink>
+        <ScrollableLink href={"#contacts"}>
+          <ScrollableAnchor id={'contacts'}>
+            <Container>
+              <Contacts/>
             </Container>
           </ScrollableAnchor>
         </ScrollableLink>
