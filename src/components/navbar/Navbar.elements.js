@@ -23,6 +23,24 @@ export const StickyNavbar = styled.nav`
   }
 `;
 
+export const Underline = styled.span`
+    position: relative;
+    &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 60%;
+        background-color: ${props => props.underlineColor};
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100px;
+     }
+`
+
 export const FlexStart = styled.div`
     justify-content: flex-start;
 `;

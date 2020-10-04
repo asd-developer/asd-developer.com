@@ -14,8 +14,8 @@ import {GlobalStyles} from './globalStyles'
 import { MainContainer, CardContainer, StackContainer, Container, AboutContainer} from './app.elements'
 //Other
 import ScrollableAnchor,{configureAnchors} from 'react-scrollable-anchor'
-
-
+import { ScrollableLink } from 'react-update-url-on-scroll';
+ 
 
 const App = (props) => {
 
@@ -24,33 +24,41 @@ const App = (props) => {
   return (
     <MainContainer>
         <Navbar/>
-        <Container>
+        <ScrollableLink href={"#whois"}>
           <ScrollableAnchor id={'whois'}>
-          <CardContainer>
-                <ProfileCard/>
-                <SoftSkillsCard/>
-          </CardContainer>
+            <Container>
+                <CardContainer>
+                  <ProfileCard/>
+                  <SoftSkillsCard/>
+                </CardContainer>
+                <StackContainer>
+                  <MyStack/>
+                </StackContainer>
+            </Container>
           </ScrollableAnchor>
-          <StackContainer>
-              <MyStack/>
-          </StackContainer>
-        </Container>
-        <ScrollableAnchor id={'about'}>
-        <AboutContainer>
-          <About/>
-          <Hobbies/>
-        </AboutContainer>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'projects'}>
-          <Container>
-            <Projects/>
-          </Container>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'published-work'}>
-          <Container>
-            <Published/>
-          </Container>
-        </ScrollableAnchor>
+        </ScrollableLink>
+        <ScrollableLink href={'#about'}>
+          <ScrollableAnchor id={'about'}>
+            <AboutContainer>
+              <About/>
+              <Hobbies/>
+            </AboutContainer>
+          </ScrollableAnchor>
+        </ScrollableLink>
+        <ScrollableLink href={"#projects"}>
+          <ScrollableAnchor id={'projects'}>
+            <Container>
+              <Projects/>
+            </Container>
+          </ScrollableAnchor>
+        </ScrollableLink>
+        <ScrollableLink href={"#published-work"}>
+          <ScrollableAnchor id={'published-work'}>
+            <Container>
+              <Published/>
+            </Container>
+          </ScrollableAnchor>
+        </ScrollableLink>
       <GlobalStyles/>
     </MainContainer>
   );

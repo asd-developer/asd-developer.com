@@ -1,17 +1,17 @@
 import React from 'react';
-import {StickyNavbar, FlexStart, FlexEnd, NavTitleLink, Link, Contact} from './Navbar.elements'
+import {StickyNavbar, FlexStart, FlexEnd, NavTitleLink, Link, Contact, Underline} from './Navbar.elements'
 
 const Navbar = () => {
   return (
     <StickyNavbar>
         <FlexStart>
-            <NavTitleLink href="#whois">ASD-DEVELOPER</NavTitleLink>
+            <Underline underlineColor={'#868FFF'}><NavTitleLink href="#whois" underlineColor={'#868FFF'}>ASD-DEVELOPER</NavTitleLink></Underline >
         </FlexStart>
         <FlexEnd>
-            <Link href="#about">About</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#published-work">Published Work</Link>
-            <Contact href="#contacts">Contact Me</Contact>
+            <Underline underlineColor={'#868FFF'}><Link href="#about" >About</Link></Underline>
+            <Underline underlineColor={'#868FFF'}><Link href="#projects" >Projects</Link></Underline>
+            <Underline underlineColor={'#868FFF'}><Link href="#published-work" >Published Work</Link></Underline>
+            <Underline underlineColor={'white'}><Contact href="#contacts" >Contact Me</Contact></Underline>
         </FlexEnd>
     </StickyNavbar>
   );
