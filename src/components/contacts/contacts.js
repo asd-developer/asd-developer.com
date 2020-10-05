@@ -12,7 +12,6 @@ const Contacts = (props) => {
 
     const handleChange = (event) =>{
         setValue({...Value,[event.target.name]:event.target.value});
-        console.log(Value);
     }
 
   return (
@@ -30,7 +29,7 @@ const Contacts = (props) => {
                 </div>
                 <div>
                     <label for="message">Message</label>
-                    <textarea type="text" name="message" placeholder="Write here the message you want to send me." cols="45" row="10" onChange={handleChange} required/>
+                    <textarea type="text" name="message" placeholder="Write here what you would like to send to me." cols="45" row="10" onChange={handleChange} required/>
                 </div>
                 <h2>You will receive a Email with the message content.</h2>
                 <button type="submit">Send</button>

@@ -8,7 +8,10 @@ export const ContactsForm = styled.div`
     background: rgb(57,40,209);
     background: linear-gradient(146deg, rgba(57,40,209,1) 0%, rgba(130,54,206,1) 100%);
     border-radius: 60px;
-
+    box-shadow: 4px 5px 10px #050FFF29;
+    @media screen and (max-width: 850px){
+      width: 95%;
+    }
     h1{
         text-align: center;
         color: white;
@@ -25,6 +28,7 @@ export const Form = styled.form`
 
     }
     h2{
+        margin: 0px;
         text-align: center;
         font-size: 0.7rem;
         color: white;
@@ -67,3 +71,4 @@ export const Form = styled.form`
         opacity: 100%;
     }
 `
+
