@@ -26,6 +26,7 @@ export const PostsContainer = styled.a`
 `
 
 export const Title = styled.h2`
+    margin-left: 1rem;
     font-family: 'Lexend Deca', sans-serif;
     color: #4C5391;
     text-align: left;
@@ -33,7 +34,7 @@ export const Title = styled.h2`
     margin-bottom: 2rem;
     h2{
         margin-top: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 `
 

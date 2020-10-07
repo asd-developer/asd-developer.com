@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {ContactsForm, Form} from './contacts.elements'
+import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum} from './contacts.elements'
 
 const Contacts = (props) => {
     const [Value, setValue] = useState(
@@ -31,14 +31,24 @@ const Contacts = (props) => {
                     <label for="message">Message</label>
                     <textarea type="text" name="message" placeholder="Write here what you would like to send to me." cols="45" row="10" onChange={handleChange} required/>
                 </div>
-                <h2>You will receive a Email with the message content.</h2>
+                <h2>You will receive an Email with the message content.</h2>
                 <button type="submit">Send</button>
             </Form>
         </ContactsForm>
-        {/*<OtherContacts>
-            <PhoneNumber/>
-            <Email/>
-        </OtherContacts>*/}
+        <OtherContacts>
+            <PhoneNumber>
+                <img src="phonenumber.svg" alt="phone number"/>
+                <span>+351</span>
+                <h2>939282394</h2>
+            </PhoneNumber>
+            <MyEmail><img src="Email.svg" alt="phone number"/><h2>andreduarte.profissional@gmail.com</h2></MyEmail>
+        </OtherContacts>
+        <Curriculum>
+            <div>
+                <img src="Cv.svg" alt="Curriculo"></img>
+                <h2>Download my C.V</h2>
+            </div>
+        </Curriculum>
     </>
   );
 }
