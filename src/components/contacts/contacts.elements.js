@@ -86,6 +86,7 @@ export const OtherContacts = styled.section`
     @media screen and (max-width: 850px){
         grid-template-columns: 100%;
         width: 90%;
+        padding: 0px;
         justify-content: center;
     }
     @media only screen and (min-device-width : 1700px){
@@ -198,7 +199,7 @@ export const Curriculum = styled.section`
         width: 9%;
     }
     h2{
-        padding-left: 1rem;
+        padding-left: 2rem;
         font-size: 1em;
         color:white;
         text-align: center;
@@ -206,6 +207,7 @@ export const Curriculum = styled.section`
     @media screen and (max-width: 850px){
         grid-template-columns: 100%;
         width: 90%;
+        padding: 0px;
         justify-content: center;
         div{
         margin-top: 0rem;
@@ -217,7 +219,7 @@ export const Curriculum = styled.section`
         }
         h2{
             font-size: 1.5em;
-            padding-left: 2rem;
+            padding-left: 1rem;
         }
     }
     @media only screen and (min-device-width : 1700px){
