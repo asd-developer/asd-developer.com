@@ -167,7 +167,7 @@ export const MyEmail = styled.div`
             width: 10%;
         }
         h2{
-            font-size: 1.2em;
+            font-size: 80%;
         }
     }
 `
@@ -198,7 +198,7 @@ export const Curriculum = styled.section`
         width: 9%;
     }
     h2{
-        padding-left: 2rem;
+        padding-left: 1rem;
         font-size: 1em;
         color:white;
         text-align: center;
@@ -217,7 +217,7 @@ export const Curriculum = styled.section`
         }
         h2{
             font-size: 1.5em;
-            padding-left: 3rem;
+            padding-left: 2rem;
         }
     }
     @media only screen and (min-device-width : 1700px){
