@@ -45,7 +45,7 @@ const Contacts = (props) => {
         </OtherContacts>
         <Curriculum>
             <div>
-                <img src="Cv.svg" alt="Curriculo"></img>
+                <img src="CV.svg" alt="Curriculo"></img>
                 <h2>Download my C.V</h2>
             </div>
         </Curriculum>
