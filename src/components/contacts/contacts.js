@@ -21,11 +21,11 @@ const Contacts = (props) => {
             <Form onSubmit={""}>
                 <div>
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="example: André Duarte" onChange={handleChange} required/>
+                    <input type="text" name="name" placeholder="André Duarte" onChange={handleChange} required/>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="example: testemail@testemail.com" onChange={handleChange} required/>
+                    <input type="email" name="email" placeholder="example@testemail.com" onChange={handleChange} required/>
                 </div>
                 <div>
                     <label for="message">Message</label>
