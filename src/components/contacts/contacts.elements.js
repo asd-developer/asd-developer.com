@@ -183,6 +183,7 @@ export const Curriculum = styled.section`
     justify-content: center;
 
     div{
+    position: relative;
     display: flex;
     margin: 0px auto;
     width: 16rem;
@@ -190,16 +191,18 @@ export const Curriculum = styled.section`
     background-color: #4E4E4E;
     border-radius: 40px;
     align-items: center;
+    justify-content: center;
     box-shadow: 4px 5px 10px #050FFF29;
     }
     
     img{
+        position: absolute;
+        left: 20px;
         display: inline-block;
-        padding-left: 2rem;
+        justify-content: flex-start;
         width: 9%;
     }
     h2{
-        padding-left: 2rem;
         font-size: 1em;
         color:white;
         text-align: center;
@@ -218,7 +221,8 @@ export const Curriculum = styled.section`
             width: 7%;
         }
         h2{
-            font-size: 1.5em;
+            text-align: center
+            font-size: 1.3em;
             padding-left: 1rem;
         }
     }
