@@ -135,6 +135,7 @@ export const PhoneNumber = styled.div`
 `
 
 export const MyEmail = styled.div`
+    position: relative;
     display: flex;
     margin: 0px auto;
     width: 20rem;
@@ -142,11 +143,13 @@ export const MyEmail = styled.div`
     background-color:white;
     border-radius: 40px;
     align-items: center;
+    justify-content: center;
     box-shadow: 4px 5px 10px #050FFF29;
     
     img{
+        position: absolute;
+        left: 15px;
         display: inline-block;
-        padding-left: 1rem;
     }
     span{
         display: inline-block;
@@ -189,7 +192,7 @@ export const Curriculum = styled.section`
     width: 16rem;
     height: 3rem;
     background-color: #4E4E4E;
-    border-radius: 40px;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 5px 10px #050FFF29;
@@ -197,13 +200,15 @@ export const Curriculum = styled.section`
     
     img{
         position: absolute;
-        left: 20px;
+        right: 15px;
         display: inline-block;
         justify-content: flex-start;
         width: 9%;
     }
     h2{
+        display: inline-block;
         font-size: 1em;
+        padding-right: 2rem;
         color:white;
         text-align: center;
     }
@@ -219,11 +224,14 @@ export const Curriculum = styled.section`
         }
         img{
             width: 7%;
+            right: 25px;
+            padding: 1rem;
         }
         h2{
-            text-align: center
+            text-align: center;
             font-size: 1.3em;
-            padding-left: 1rem;
+            padding-left: 3rem;
+            padding-right: 4rem;
         }
     }
     @media only screen and (min-device-width : 1700px){
