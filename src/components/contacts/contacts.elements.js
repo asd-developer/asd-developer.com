@@ -192,7 +192,7 @@ export const Curriculum = styled.section`
     width: 16rem;
     height: 3rem;
     background-color: #4E4E4E;
-    border-radius: 20px;
+    border-radius: 40px;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 5px 10px #050FFF29;
@@ -219,7 +219,8 @@ export const Curriculum = styled.section`
         justify-content: center;
         div{
         margin-top: 0rem;
-        height: 4rem;
+        height: 3.5rem;
+        min-height: 3.5rem;
         width: 90%;
         }
         img{
