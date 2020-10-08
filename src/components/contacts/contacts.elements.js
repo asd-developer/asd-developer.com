@@ -120,16 +120,16 @@ export const PhoneNumber = styled.div`
         text-align: center;
     }
     @media screen and (max-width: 850px){
-        height: 5rem;
+        height: 4rem;
         width: 90%;
         img{
             width: 10%;
         }
         span{
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
         h2{
-            font-size: 1.8em;
+            font-size: 1.2em;
         }
     }
 `
@@ -162,13 +162,13 @@ export const MyEmail = styled.div`
     }
     @media screen and (max-width: 850px){
         margin-top: 1rem;
-        height: 5rem;
+        height: 4rem;
         width: 90%;
         img{
             width: 10%;
         }
         h2{
-            font-size: 80%;
+            font-size: 3vw;
         }
     }
 `
@@ -211,7 +211,7 @@ export const Curriculum = styled.section`
         justify-content: center;
         div{
         margin-top: 0rem;
-        height: 5rem;
+        height: 4rem;
         width: 90%;
         }
         img{
