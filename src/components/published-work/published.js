@@ -7,17 +7,17 @@ const Published = (props) => {
     [
       {
         title: "Design Portfolio", 
-        image: "andredesign.png",
+        image: "published/andredesign.png",
         link: "https://www.andresoaresduarte.com",
       },
       {
         title: "Time 4 Changers", 
-        image: "time4changers.png",
+        image: "published/time4changers.png",
         link: "https://www.time4changers.com",
       },
       {
         title: "Saude Online", 
-        image: "saudeonline.png",
+        image: "published/saudeonline.png",
         link: "https://saudeonline.pt",
       }
     ]
