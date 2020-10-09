@@ -76,176 +76,56 @@ export const Form = styled.form`
 `
 
 export const OtherContacts = styled.section`
-    display: grid;
-    width: 70%;
-    grid-template-columns: 50% 50%;
-    margin: 0rem auto;
-    margin-top: 1rem;
-    padding: 0rem 2rem;
-    justify-content: center;
-    @media screen and (max-width: 850px){
-        grid-template-columns: 100%;
-        width: 90%;
-        padding: 0px;
-        justify-content: center;
-    }
-    @media only screen and (min-device-width : 1700px){
-        width: 50%;
-        grid-template-columns: 50% 50%;
-    }
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px #050FFF29;
 `
 export const PhoneNumber = styled.div`
     display: flex;
-    margin: 0px auto;
-    width: 20rem;
-    height: 3rem;
-    background-color:white;
-    border-radius: 40px;
     align-items: center;
-    box-shadow: 4px 5px 10px #050FFF29;
+    justify-content: center;
     img{
         display: inline-block;
-        padding-left: 1rem;
+        padding-right: 0.5rem;
     }
-    span{
+    a{
         display: inline-block;
-        text-align: left;
-        padding: 0rem 1rem;
-        color: #7A7A7A;
+        text-decoration: none;
+        color: #474747;
     }
-    h2{
-        display: inline-block;
+    em{
+        text-decoration: none;
+        color: #272727;
         font-size: 1em;
-        color:#474747;
-        text-align: center;
+        padding-right: 0.6rem;
     }
-    @media screen and (max-width: 850px){
-        height: 4rem;
-        width: 90%;
-        img{
-            width: 10%;
-        }
-        span{
-            font-size: 1.3em;
-        }
-        h2{
-            font-size: 1.2em;
-        }
+    p{
+        display: inline-block;
+        color: #474747;
+        font-size: 1.2em;
     }
 `
 
 export const MyEmail = styled.div`
-    position: relative;
-    display: flex;
-    margin: 0px auto;
-    width: 20rem;
-    height: 3rem;
-    background-color:white;
-    border-radius: 40px;
+   display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 4px 5px 10px #050FFF29;
-    
     img{
-        position: absolute;
-        left: 15px;
         display: inline-block;
-    }
-    span{
-        display: inline-block;
-        text-align: left;
-        padding: 0rem 1rem;
-        color: #7A7A7A;
+        padding-right: 0.5rem;
     }
     h2{
-        padding-left: 1rem;
-        font-size: 0.75em;
-        color:#474747;
-        text-align: center;
-    }
-    @media screen and (max-width: 850px){
-        margin-top: 1rem;
-        height: 4rem;
-        width: 90%;
-        img{
-            width: 10%;
-        }
-        h2{
-            font-size: 3vw;
-        }
+        display: inline-block;
+        color: #474747;
+        font-size: 1em;
     }
 `
 
 export const Curriculum = styled.section`
-    display: grid;
-    width: 70%;
-    grid-template-columns: 100%;
-    margin: 0rem auto;
-    margin-top: 1rem;
-    padding: 0rem 2rem;
-    justify-content: center;
-
-    div{
-    position: relative;
-    display: flex;
-    margin: 0px auto;
-    width: 16rem;
-    height: 3rem;
-    background-color: #4E4E4E;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 5px 10px #050FFF29;
-    }
-    
-    img{
-        position: absolute;
-        right: 15px;
-        display: inline-block;
-        justify-content: flex-start;
-        width: 9%;
-    }
-    h2{
-        display: inline-block;
-        font-size: 1em;
-        padding-right: 2rem;
-        color:white;
-        text-align: center;
-    }
-    @media screen and (max-width: 850px){
-        grid-template-columns: 100%;
-        width: 90%;
-        padding: 0px;
-        justify-content: center;
-        div{
-        margin-top: 0rem;
-        height: 3.5rem;
-        min-height: 3.5rem;
-        width: 90%;
-        }
-        img{
-            width: 7%;
-            right: 25px;
-            padding: 1rem;
-        }
-        h2{
-            text-align: center;
-            font-size: 1.3em;
-            padding-left: 3rem;
-            padding-right: 4rem;
-        }
-    }
-    @media only screen and (min-device-width : 1700px){
-        width: 50%;
-        grid-template-columns: 100%;
-    }
-`
-
-export const Social = styled.section`
-    margin-top: 2rem;
-    h1{
-        font-size: 1.2em;
-        color: #393939;
-        text-align: center;
-    }
+    display: inline-block;
 `

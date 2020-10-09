@@ -38,25 +38,16 @@ const Contacts = (props) => {
         <OtherContacts>
             <PhoneNumber>
                 <img src="phonenumber.svg" alt="phone number"/>
-                <span>+351</span>
-                <h2>939282394</h2>
+                <a href="tel:+351939282394"><em>+351</em><p>939282394</p></a>
             </PhoneNumber>
             <MyEmail><img src="Email.svg" alt="phone number"/><h2>andreduarte.profissional@gmail.com</h2></MyEmail>
-        </OtherContacts>
         <Curriculum>
             <div>
-                <h2>Download my Resume</h2>
+                <h2>Resume:</h2>
                 <img src="CV.svg" alt="Curriculo"></img>
             </div>
         </Curriculum>
-        <Social>
-            <h1>Follow my work</h1>
-            <div>
-                <img src="instagram.svg" alt="instagram"/>
-                <img src="github.svg" alt="github"/>
-                <img src="linkedin.svg" alt="linkedin"/>
-            </div>
-        </Social>
+        </OtherContacts>
     </>
   );
 }
