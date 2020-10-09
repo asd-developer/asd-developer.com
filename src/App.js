@@ -10,6 +10,7 @@ import Hobbies from './components/about/hobbies'
 import Projects from './components/project/project'
 import Published from './components/published-work/published'
 import Contacts from './components/contacts/contacts'
+import Footer from './components/footer/footer'
 //STYLED COMPONENTS
 import {GlobalStyles} from './globalStyles'
 import { MainContainer, CardContainer, StackContainer, Container, AboutContainer} from './app.elements'
@@ -67,6 +68,7 @@ const App = (props) => {
             </Container>
           </ScrollableAnchor>
         </ScrollableLink>
+        <Footer/>
       <GlobalStyles/>
     </MainContainer>
   );

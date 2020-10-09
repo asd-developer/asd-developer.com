@@ -36,30 +36,31 @@ const Contacts = (props) => {
             </Form>
         </ContactsForm>
         <OtherContacts>
-            <PhoneNumber>
-<<<<<<< HEAD
-                <img src="phonenumber.svg" alt="phone number"/>
-                <a href="tel:+351939282394"><em>+351</em><p>939282394</p></a>
-            </PhoneNumber>
-            <MyEmail><img src="Email.svg" alt="phone number"/><h2>andreduarte.profissional@gmail.com</h2></MyEmail>
-        <Curriculum>
-            <div>
-                <h2>Resume:</h2>
-                <img src="CV.svg" alt="Curriculo"></img>
-=======
-                <img src="contacts/phonenumber.svg" alt="phone number"/>
-                <span>+351</span>
-                <h2>939282394</h2>
-            </PhoneNumber>
-            <MyEmail><img src="contacts/Email.svg" alt="phone number"/><h2>andreduarte.profissional@gmail.com</h2></MyEmail>
-        </OtherContacts>
-        <Curriculum>
-            <div>
-                <h2>Download my Resume</h2>
-                <img src="contacts/CV.svg" alt="Curriculo"></img>
->>>>>>> 034f2071b145624445a7c63dea4bda844e84a343
-            </div>
-        </Curriculum>
+            <span>
+                <PhoneNumber>
+                    <img src="contacts/phonenumber.svg" alt="phone number"/>
+                    <a href="tel:+351939282394"><em>+351</em><p>939282394</p></a>
+                </PhoneNumber>
+            </span>
+            <span>
+                <MyEmail><img src="contacts/Email.svg" alt="phone number"/><h2>andreduarte.profissional@gmail.com</h2></MyEmail>
+            </span>
+            <span>
+                <Curriculum>
+                        <a href="_blank">
+                            <h2>resume/cv</h2>
+                            <img src="contacts/CV.svg" alt="Curriculo"></img>
+                        </a>  
+                </Curriculum>
+            </span>
+                <Social>
+                <hr/>
+                <ul>
+                    <li><img src="social/instagram.svg" alt="Instagram"/></li>
+                    <li><img src="social/github.svg" alt="Github"/></li>
+                    <li><img src="social/linkedin.svg" alt="Linkedin"/></li>
+                </ul>
+                </Social>
         </OtherContacts>
     </>
   );
