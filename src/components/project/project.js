@@ -7,24 +7,24 @@ const Projects = (props) => {
     [
       {
         title: "Book Tracking App", 
-        image: "myreads.png",
+        image: "projects/myreads.png",
         stack: "React, NodeJs, API",
         link: "https://github.com/asd-developer/MyReadsReactJsApp",
       },
       {
         title: "Mechanical Keyboard Builds", 
-        image: "keyboardbuilds.png",
+        image: "projects/keyboardbuilds.png",
         stack: "React, NodeJs, MongoDB, Bootstrap",
       },
       {
         title: "Weather App", 
-        image: "weatherproject.png",
+        image: "projects/weatherproject.png",
         stack: "Javascript, CSS, NodeJs, Webpack, API",
         link: "https://github.com/asd-developer/weather-journal-app",
       },
       {
         title: "Hex Color Generator", 
-        image: "hexadecimalproject.png",
+        image: "projects/hexadecimalproject.png",
         stack: "React, CSS, AWS",
         link: "https://github.com/asd-developer/HexGeneratorApp",
       }

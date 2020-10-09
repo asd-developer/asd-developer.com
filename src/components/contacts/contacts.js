@@ -37,6 +37,7 @@ const Contacts = (props) => {
         </ContactsForm>
         <OtherContacts>
             <PhoneNumber>
+<<<<<<< HEAD
                 <img src="phonenumber.svg" alt="phone number"/>
                 <a href="tel:+351939282394"><em>+351</em><p>939282394</p></a>
             </PhoneNumber>
@@ -45,6 +46,18 @@ const Contacts = (props) => {
             <div>
                 <h2>Resume:</h2>
                 <img src="CV.svg" alt="Curriculo"></img>
+=======
+                <img src="contacts/phonenumber.svg" alt="phone number"/>
+                <span>+351</span>
+                <h2>939282394</h2>
+            </PhoneNumber>
+            <MyEmail><img src="contacts/Email.svg" alt="phone number"/><h2>andreduarte.profissional@gmail.com</h2></MyEmail>
+        </OtherContacts>
+        <Curriculum>
+            <div>
+                <h2>Download my Resume</h2>
+                <img src="contacts/CV.svg" alt="Curriculo"></img>
+>>>>>>> 034f2071b145624445a7c63dea4bda844e84a343
             </div>
         </Curriculum>
         </OtherContacts>
