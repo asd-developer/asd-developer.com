@@ -240,3 +240,12 @@ export const Curriculum = styled.section`
         grid-template-columns: 100%;
     }
 `
+
+export const Social = styled.section`
+    margin-top: 2rem;
+    h1{
+        font-size: 1.2em;
+        color: #393939;
+        text-align: center;
+    }
+`

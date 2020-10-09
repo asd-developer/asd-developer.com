@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum} from './contacts.elements'
+import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social} from './contacts.elements'
 
 const Contacts = (props) => {
     const [Value, setValue] = useState(
@@ -49,6 +49,14 @@ const Contacts = (props) => {
                 <img src="CV.svg" alt="Curriculo"></img>
             </div>
         </Curriculum>
+        <Social>
+            <h1>Follow my work</h1>
+            <div>
+                <img src="instagram.svg" alt="instagram"/>
+                <img src="github.svg" alt="github"/>
+                <img src="linkedin.svg" alt="linkedin"/>
+            </div>
+        </Social>
     </>
   );
 }
