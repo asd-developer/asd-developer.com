@@ -108,9 +108,11 @@ export const PhoneNumber = styled.div`
         padding-right: 0.5rem;
     }
     a{
-        display: inline-block;
+        display: flex;
         text-decoration: none;
         color: #474747;
+        align-items: center;
+        justify-content: center;
     }
     em{
         text-decoration: none;

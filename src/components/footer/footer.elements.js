@@ -20,6 +20,7 @@ export const Credits = styled.nav`
         width: 100%;
         font-size: 3vw;
         padding: 0;
+        border-radius: 0;
         h1{
             padding-left: 1rem;
         }
@@ -27,4 +28,5 @@ export const Credits = styled.nav`
             padding-right: 1rem;
         }
   }
+  
 `

@@ -38,8 +38,10 @@ const Contacts = (props) => {
         <OtherContacts>
             <span>
                 <PhoneNumber>
-                    <img src="contacts/phonenumber.svg" alt="phone number"/>
-                    <a href="tel:+351939282394"><em>+351</em><p>939282394</p></a>
+                    <a href="tel:+351939282394">
+                        <img src="contacts/phonenumber.svg" alt="phone number"/>
+                        <em>+351</em><p>939282394</p>
+                    </a>
                 </PhoneNumber>
             </span>
             <span>
@@ -47,7 +49,7 @@ const Contacts = (props) => {
             </span>
             <span>
                 <Curriculum>
-                        <a href="_blank">
+                        <a href="Andre Duarte - CV.pdf" download>
                             <h2>resume/cv</h2>
                             <img src="contacts/CV.svg" alt="Curriculo"></img>
                         </a>  
@@ -56,9 +58,9 @@ const Contacts = (props) => {
                 <Social>
                 <hr/>
                 <ul>
-                    <li><img src="social/instagram.svg" alt="Instagram"/></li>
-                    <li><img src="social/github.svg" alt="Github"/></li>
-                    <li><img src="social/linkedin.svg" alt="Linkedin"/></li>
+                    <li><a target="_blank" href="https://www.instagram.com/andred3223/" rel="noopener noreferrer"><img src="social/instagram.svg" alt="Instagram"/></a></li>
+                    <li><a target="_blank" href="https://github.com/asd-developer" rel="noopener noreferrer"><img src="social/github.svg" alt="Github"/></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/andresdev/" rel="noopener noreferrer"><img src="social/linkedin.svg" alt="Linkedin"/></a></li>
                 </ul>
                 </Social>
         </OtherContacts>
