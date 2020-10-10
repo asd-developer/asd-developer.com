@@ -75,29 +75,43 @@ export const Mobile = styled.nav`
     top: 0px;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 98%;
     box-shadow: 4px 5px 10px #050FFF29;
     border-radius: 0px 0px 1rem 1rem;
     margin: 0 auto;
-    padding: 1.2rem 0;
     height: auto;
     background-color: white;
+    span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        color: #474747;
+        text-decoration: none;
+        margin: 1rem auto;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 0;
+    }
     h1{
         margin: 0 auto;
         color: #272727;
         text-align: center;
         font-size: 100%;
     }
-    button{
+    img{
         position: absolute;
-        left: 5vw;
-        width: 2rem;
-        height: 2rem;
+        fill: #474747;
+        left: 7vw;
+        width: 1.5rem;
+        height: 1.5rem;
         border: none;
-        border-radius: 10px;
+        border-radius: 0px;
     }
     @media screen and (min-width: 851px){
       display: none;
