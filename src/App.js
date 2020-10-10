@@ -1,6 +1,7 @@
 //REACT IMPORTS
 import React from 'react';
 //FILE IMPORTS
+import MobileNavbar from "./components/navbar/mobile-navbar"
 import Navbar from "./components/navbar/navbar"
 import ProfileCard from "./components/card/profile-card"
 import SoftSkillsCard from "./components/card/softskills-card"
@@ -25,6 +26,7 @@ const App = (props) => {
 
   return (
     <MainContainer>
+        <MobileNavbar/>
         <Navbar/>
         <ScrollableLink href={"#whois"}>
           <ScrollableAnchor id={'whois'}>
