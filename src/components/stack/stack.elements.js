@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     font-family: 'Lexend Deca', sans-serif;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
     h2{
@@ -15,7 +15,7 @@ export const Container = styled.div`
         width: 90%;
         margin: 1rem auto 0rem auto;
         text-align: center;
-        text-height:2rem;
+        line-height: 1.5rem;
         color: #474747
     }
 `
@@ -30,7 +30,7 @@ export const IconRow = styled.div`
     margin-bottom: 0.5rem;
     div{
         display:inline-block;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     img{

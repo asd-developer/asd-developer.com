@@ -33,7 +33,7 @@ const MyStack = () => {
       </IconRow>
       <div>
         <h2>Others:</h2>
-        <h3>Webpack, DevTools, Sass, Bootstrap, PHP, Jest, mySQL, CICD, Docker</h3>
+        <h3>Webpack, DevTools, MonngoDB, Sass, styled-components, Bootstrap,<br/> Python, PHP, Jest, mySQL, CICD, Docker, AWS</h3>
       </div>
     </Container>
   );
