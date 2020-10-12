@@ -30,6 +30,7 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
+
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
@@ -42,8 +43,10 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
+
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
+
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
@@ -54,5 +57,22 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
 
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDYJWKLZe9gshrIxLZz19a9eH4sC_5nga8",
+    authDomain: "form-emails-737a7.firebaseapp.com",
+    databaseURL: "https://form-emails-737a7.firebaseio.com",
+    projectId: "form-emails-737a7",
+    storageBucket: "form-emails-737a7.appspot.com",
+    messagingSenderId: "1031664752104",
+    appId: "1:1031664752104:web:4e1b02c2ea0e868eda405d",
+    measurementId: "G-PPFR8Y62CC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
