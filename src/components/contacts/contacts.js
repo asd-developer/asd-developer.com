@@ -14,11 +14,23 @@ const Contacts = (props) => {
         setValue({...Value,[event.target.name]:event.target.value});
     }
 
+    const submitForm = (event) => {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+        };
+        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
+            .then(response => response.json())
+            .then(data => Value);
+
+        event.preventDefault()
+    }
+
   return (
     <>
         <ContactsForm>
             <h1>Contact Me</h1>
-            <Form onSubmit={""}>
+            <Form onSubmit={submitForm}>
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" placeholder="André Duarte" onChange={handleChange} required/>
