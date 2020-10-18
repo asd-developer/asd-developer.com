@@ -18,12 +18,14 @@ const Contacts = (props) => {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({Value})
         };
         fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
             .then(response => response.json())
             .then(data => Value);
-
+        }
         event.preventDefault()
+
     }
 
   return (
