@@ -17,15 +17,13 @@ const Contacts = (props) => {
     const submitForm = (event) => {
         const requestOptions = {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { Access-Control-Allow-Origin: http://asd-developer.onrender.com},
             body: JSON.stringify({Value})
         };
         fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
             .then(response => response.json())
             .then(data => Value);
-        }
         event.preventDefault()
-
     }
 
   return (
@@ -80,6 +78,6 @@ const Contacts = (props) => {
         </OtherContacts>
     </>
   );
-}
-
+  }
+  
 export default Contacts;

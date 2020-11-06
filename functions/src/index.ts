@@ -2,7 +2,11 @@ import * as functions from 'firebase-functions';
 
 import * as sgMail from '@sendgrid/mail';
 
+const express = require('express');
 const cors = require('cors')({origin: true});
+const app = express();
+
+app.use(cors);
 
 const API_KEY = functions.config().sendgrid.key;
 const TEMPLATE_ID = functions.config().sendgrid.template;
