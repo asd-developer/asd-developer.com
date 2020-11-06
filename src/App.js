@@ -1,5 +1,7 @@
+/////
 //REACT IMPORTS
 import React from 'react';
+/////
 //FILE IMPORTS
 import MobileNavbar from "./components/navbar/mobile-navbar"
 import Navbar from "./components/navbar/navbar"
@@ -12,12 +14,17 @@ import Projects from './components/project/project'
 import Published from './components/published-work/published'
 import Contacts from './components/contacts/contacts'
 import Footer from './components/footer/footer'
+/////
 //STYLED COMPONENTS
 import {GlobalStyles} from './globalStyles'
 import { MainContainer, CardContainer, StackContainer, Container, AboutContainer} from './app.elements'
+/////
 //Other
 import ScrollableAnchor,{configureAnchors} from 'react-scrollable-anchor'
 import { ScrollableLink } from 'react-update-url-on-scroll';
+/////
+//FIREBASE
+import * as firebase from 'firebase/app';
  
 
 const App = (props) => {
