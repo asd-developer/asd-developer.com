@@ -14,11 +14,33 @@ const Contacts = (props) => {
         setValue({...Value,[event.target.name]:event.target.value});
     }
 
+    const submitForm = (event) => {
+        const options = {
+            method: 'OPTIONS',
+            headers: { Access-Control-Allow-Origin: http://asd-developer.onrender.com},
+            body: JSON.stringify({Value})
+        };
+        const requestOptions = {
+            method: 'POST',
+            headers: { Access-Control-Allow-Origin: http://asd-developer.onrender.com},
+            body: JSON.stringify({Value})
+        };
+        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', options) // enable pre-flight request for DELETE request
+        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
+            .then(response => response.json())
+            .then(data => Value);
+        event.preventDefault();
+        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
+            .then(response => response.json())
+            .then(data => Value);
+        event.preventDefault()
+    }
+
   return (
     <>
         <ContactsForm>
             <h1>Contact Me</h1>
-            <Form onSubmit={""}>
+            <Form onSubmit={submitForm}>
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" placeholder="André Duarte" onChange={handleChange} required/>
@@ -66,6 +88,6 @@ const Contacts = (props) => {
         </OtherContacts>
     </>
   );
-}
-
+  }
+  
 export default Contacts;

@@ -1,7 +1,11 @@
 {
   "functions": {
+<<<<<<< HEAD
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
+=======
+    "predeploy": "npm --prefix \"$RESOURCE_DIR\" run build"
+>>>>>>> 89d75d0bb79758c0702810bfa2754109924dcf18
   }
 }
