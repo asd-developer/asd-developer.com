@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
 import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social} from './contacts.elements'
-import firebase from 'firebase/app'
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import firebase from 'firebase/app';
+
+
 
 const Contacts = (props) => {
     const [Value, setValue] = useState({
@@ -9,12 +12,27 @@ const Contacts = (props) => {
             message: ''
     })
 
+    const createNotification = (type) => {
+          switch (type) {
+            case 'success':
+              NotificationManager.success('Form submitted sucessfully!', 'Message Submitted!');
+              break;
+            case 'error':
+              NotificationManager.error('Error message', 'Click me!', 5000, () => {
+                alert('callback');
+              });
+              break;
+          }
+      };
+
+
     const handleChange = (event) =>{
         setValue({...Value,[event.target.name]: event.target.value});
     }
 
-    const submitForm = (event) => {
-
+    const submitForm = async (event) => {
+        event.preventDefault()
+        
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -22,26 +40,12 @@ const Contacts = (props) => {
             body: JSON.stringify(Value)
         };
 
-        fetch("https://us-central1-asd-developer-emails.cloudfunctions.net/formMail", requestOptions)
-        .then(res => res.json())
-        .then(
-          (result) => {
-            console.log(result)
-            });
-        // let addMessage = firebase.functions().httpsCallable('formMail')
-        // addMessage(Value)
-        //     .then((result) => {
-        //         // Read result of the Cloud Function.
-        //         let sanitizedMessage = result.data.text;
-        //         console.log('result', sanitizedMessage);
-        //     })
-        //     .catch((error) => {
-        //         // Getting the Error details.
-        //         console.log(error);
-        //         // ...
-        //     });
-        event.preventDefault()
-    }
+        await fetch("https://us-central1-asd-developer-emails.cloudfunctions.net/formMail", requestOptions)
+            .then(resp => {
+                console.log('Printing out not json');
+                resp.status ? createNotification("success") : createNotification("error")
+            })
+        }
 
   return (
     <>
@@ -93,6 +97,7 @@ const Contacts = (props) => {
                 </ul>
                 </Social>
         </OtherContacts>
+        <NotificationContainer/>
     </>
   );
   }
