@@ -16,7 +16,6 @@ const config = {
    // Initialize Firebase
    firebase.initializeApp(firebaseConfig);
    firebase.analytics();
- </script>
 }
 
 firebase.initializeApp(config);

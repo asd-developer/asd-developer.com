@@ -24,8 +24,8 @@ import ScrollableAnchor,{configureAnchors} from 'react-scrollable-anchor'
 import { ScrollableLink } from 'react-update-url-on-scroll';
 /////
 //FIREBASE
-import * as firebase from 'firebase/app';
- 
+import firebase from 'firebase/app'
+
 
 const App = (props) => {
 

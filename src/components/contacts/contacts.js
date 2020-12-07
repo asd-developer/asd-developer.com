@@ -1,38 +1,45 @@
 import React,{useState} from 'react'
 import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social} from './contacts.elements'
+import firebase from 'firebase/app'
 
 const Contacts = (props) => {
-    const [Value, setValue] = useState(
-        [
-            {name: ''},
-            {email: ''},
-            {message: ''},
-        ]
-    )
+    const [Value, setValue] = useState({
+            name: '',
+            email: '',
+            message: ''
+    })
 
     const handleChange = (event) =>{
-        setValue({...Value,[event.target.name]:event.target.value});
+        setValue({...Value,[event.target.name]: event.target.value});
     }
 
     const submitForm = (event) => {
-        const options = {
-            method: 'OPTIONS',
-            headers: { Access-Control-Allow-Origin: http://asd-developer.onrender.com},
-            body: JSON.stringify({Value})
-        };
+
         const requestOptions = {
             method: 'POST',
-            headers: { Access-Control-Allow-Origin: http://asd-developer.onrender.com},
-            body: JSON.stringify({Value})
+            headers: { 'Content-Type': 'application/json' },
+            dataType: "json",
+            body: JSON.stringify(Value)
         };
-        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', options) // enable pre-flight request for DELETE request
-        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
-            .then(response => response.json())
-            .then(data => Value);
-        event.preventDefault();
-        fetch('https://us-central1-asd-developer-emails.cloudfunctions.net/formMail', requestOptions)
-            .then(response => response.json())
-            .then(data => Value);
+
+        fetch("https://us-central1-asd-developer-emails.cloudfunctions.net/formMail", requestOptions)
+        .then(res => res.json())
+        .then(
+          (result) => {
+            console.log(result)
+            });
+        // let addMessage = firebase.functions().httpsCallable('formMail')
+        // addMessage(Value)
+        //     .then((result) => {
+        //         // Read result of the Cloud Function.
+        //         let sanitizedMessage = result.data.text;
+        //         console.log('result', sanitizedMessage);
+        //     })
+        //     .catch((error) => {
+        //         // Getting the Error details.
+        //         console.log(error);
+        //         // ...
+        //     });
         event.preventDefault()
     }
 
@@ -42,15 +49,15 @@ const Contacts = (props) => {
             <h1>Contact Me</h1>
             <Form onSubmit={submitForm}>
                 <div>
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <input type="text" name="name" placeholder="André Duarte" onChange={handleChange} required/>
                 </div>
                 <div>
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="email" name="email" placeholder="example@testemail.com" onChange={handleChange} required/>
                 </div>
                 <div>
-                    <label for="message">Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea type="text" name="message" placeholder="Write here what you would like to send to me." cols="45" row="10" onChange={handleChange} required/>
                 </div>
                 <h2>You will receive an Email with the message content.</h2>

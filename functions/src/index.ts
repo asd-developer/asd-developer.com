@@ -3,26 +3,31 @@ import * as functions from 'firebase-functions';
 import * as sgMail from '@sendgrid/mail';
 
 const express = require('express');
-const cors = require('cors')({origin: true});
+const cors = require('cors');
 const app = express();
 
-var corsOptions = {
-    origin: 'http://asd-developer.onrender.com',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  }
-
-app.use(cors);
+app.use(cors)
+// app.use(
+//     cors({
+//         Origin : "http://localhost:3000",
+//         Credentials : true,
+//         Methods : "GET, POST, OPTIONS",
+//         Headers : "Origin, Content-Type, Accept"
+//     })
+//   );
 
 const API_KEY = functions.config().sendgrid.key;
 const TEMPLATE_ID = functions.config().sendgrid.template;
 sgMail.setApiKey(API_KEY);
 
 
-exports.formMail = functions.https.onRequest((req, res) => {
-    return cors(req, res, async () => {
+exports.formMail = functions.https.onRequest(async (req, res) => {
+    return cors()(req, res, async () => {
+
     //Sends copy of the message to the user
-    const data = JSON.parse(req.body);
+    const data = req.body;
     functions.logger.log("data", data);
+    functions.logger.log("EMAIL", data.email, data.name);
     
     const msgSend = await {
         to: data.email,
@@ -49,7 +54,7 @@ exports.formMail = functions.https.onRequest((req, res) => {
     await sgMail.send(msgReceive);
 
     // Sending response 
-    res.status(200).send('Ok');
+    res.status(200).send('Ok it worked');
 });
     // Sending response 
     res.status(200).send('Ok');
