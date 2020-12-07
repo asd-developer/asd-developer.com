@@ -10,7 +10,6 @@
     "firebase": "^8.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-notifications": "^1.7.2",
     "react-scripts": "3.4.3",
     "react-scrollable-anchor": "^0.6.1",
     "react-update-url-on-scroll": "^3.5.0",

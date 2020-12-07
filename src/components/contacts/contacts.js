@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social} from './contacts.elements'
-import {NotificationContainer, NotificationManager} from 'react-notifications';
 import firebase from 'firebase/app';
 
 
@@ -12,19 +11,8 @@ const Contacts = (props) => {
             message: ''
     })
 
-    const createNotification = (type) => {
-          switch (type) {
-            case 'success':
-              NotificationManager.success('Form submitted sucessfully!', 'Message Submitted!');
-              break;
-            case 'error':
-              NotificationManager.error('Error message', 'Click me!', 5000, () => {
-                alert('callback');
-              });
-              break;
-          }
-      };
-
+    const [FormSuccess, setFormSucess] = useState(false)
+    const [FormError, setFormError] = useState(false)
 
     const handleChange = (event) =>{
         setValue({...Value,[event.target.name]: event.target.value});
@@ -43,7 +31,18 @@ const Contacts = (props) => {
         await fetch("https://us-central1-asd-developer-emails.cloudfunctions.net/formMail", requestOptions)
             .then(resp => {
                 console.log('Printing out not json');
-                resp.status ? createNotification("success") : createNotification("error")
+                
+                if(resp.status === 200){
+                    console.log("Form submitted successfully")
+                    setFormSucess(true)
+                    setTimeout(5000)
+                    setFormSucess(false)
+                }else{
+                    console.log("error submiting the form")
+                    setFormError(true)
+                    setTimeout(5000)
+                    setFormError(false)
+                }
             })
         }
 
@@ -67,6 +66,17 @@ const Contacts = (props) => {
                 <h2>You will receive an Email with the message content.</h2>
                 <button type="submit">Send</button>
             </Form>
+            <div>
+            {FormSuccess 
+                ? <div style={{height: "300px"}}> Form submitted successfully. </div>
+                : null
+                }
+            {FormError
+                ? <div style={{height: "300px"}}> An error occured while submitting the form. </div>
+                : null
+            }
+            </div>
+            
         </ContactsForm>
         <OtherContacts>
             <span>
@@ -97,7 +107,6 @@ const Contacts = (props) => {
                 </ul>
                 </Social>
         </OtherContacts>
-        <NotificationContainer/>
     </>
   );
   }
