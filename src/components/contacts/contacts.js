@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social} from './contacts.elements'
+import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social, SuccessNotification, ErrorNotification} from './contacts.elements'
 import firebase from 'firebase/app';
 
 
@@ -13,6 +13,8 @@ const Contacts = (props) => {
 
     const [FormSuccess, setFormSucess] = useState(false)
     const [FormError, setFormError] = useState(false)
+    const [FormSession, setFormSession] = useState(0)
+    const [DisableBt,setDisableBt] = useState(false)
 
     const handleChange = (event) =>{
         setValue({...Value,[event.target.name]: event.target.value});
@@ -20,7 +22,7 @@ const Contacts = (props) => {
 
     const submitForm = async (event) => {
         event.preventDefault()
-        
+        setDisableBt(true)
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -28,22 +30,36 @@ const Contacts = (props) => {
             body: JSON.stringify(Value)
         };
 
-        await fetch("https://us-central1-asd-developer-emails.cloudfunctions.net/formMail", requestOptions)
-            .then(resp => {
-                console.log('Printing out not json');
-                
-                if(resp.status === 200){
-                    console.log("Form submitted successfully")
-                    setFormSucess(true)
-                    setTimeout(5000)
-                    setFormSucess(false)
-                }else{
-                    console.log("error submiting the form")
-                    setFormError(true)
-                    setTimeout(5000)
-                    setFormError(false)
-                }
-            })
+        if(FormSession <= 2){
+            await fetch("https://us-central1-asd-developer-emails.cloudfunctions.net/formMail", requestOptions)
+                .then(resp => {
+                    console.log('resp',resp.status);
+                    
+                    if(resp.status == 200){
+                        console.log("Form submitted successfully");
+                        setFormSession(FormSession + 1);
+                        setFormSucess(true);
+                        setTimeout(()=>{
+                            setFormSucess(false)
+                        },3000);
+                        setDisableBt(false)
+                    }else{
+                        console.log("error submiting the form")
+                        setFormError(true)
+                        setTimeout(()=>{
+                            setFormError(false)
+                            setDisableBt(false)
+                        },8000);
+                    }
+                })
+        }else{
+            setFormError(true)
+                    setTimeout(()=>{
+                        setFormError(false)
+                        setDisableBt(false)
+                    },8000);
+                    
+        }
         }
 
   return (
@@ -64,19 +80,16 @@ const Contacts = (props) => {
                     <textarea type="text" name="message" placeholder="Write here what you would like to send to me." cols="45" row="10" onChange={handleChange} required/>
                 </div>
                 <h2>You will receive an Email with the message content.</h2>
-                <button type="submit">Send</button>
-            </Form>
-            <div>
-            {FormSuccess 
-                ? <div style={{height: "300px"}}> Form submitted successfully. </div>
-                : null
+                {FormSuccess 
+                    ? <SuccessNotification> Form submitted successfully. </SuccessNotification>
+                    : null
                 }
-            {FormError
-                ? <div style={{height: "300px"}}> An error occured while submitting the form. </div>
-                : null
-            }
-            </div>
-            
+                {FormError
+                    ? <ErrorNotification> An error occured while submitting the form. </ErrorNotification>
+                    : null
+                }
+                <button type="submit" disabled={DisableBt}>Send</button>
+            </Form>   
         </ContactsForm>
         <OtherContacts>
             <span>

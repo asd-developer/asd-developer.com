@@ -72,6 +72,11 @@ export const Form = styled.form`
         font-family:'Lexend Deca',sans-serif;
         color:#FFFFFF;
         opacity: 100%;
+        cursor: pointer;
+    }
+    button:disabled{
+        background-color: #769c73;
+        cursor: default;
     }
 `
 
@@ -188,4 +193,29 @@ export const Social = styled.div`
     @media screen and (max-width: 850px){
       margin: 1rem auto;
     }
+`
+
+export const SuccessNotification = styled.div`
+    width: 40%;
+    max-width: 40%;
+    margin: 0px auto;
+    padding: 0.6rem;
+    background-color: #009900;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 20px;
+    text-align:center;
+
+`
+
+export const ErrorNotification = styled.div`
+    width: 50%;
+    max-width: 50%;
+    margin: 0px auto;
+    padding: 0.6rem;
+    background-color: #ff0033;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 20px;
+    text-align:center;
 `
