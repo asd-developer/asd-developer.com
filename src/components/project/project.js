@@ -39,7 +39,7 @@ const Projects = (props) => {
     <>
         <Title>
           Projects
-          <h2>(Click in any square to acess the GitHub page.)</h2>
+          <span>(Click in any square to acess the GitHub page.)</span>
         </Title>
         <Posts>
           {projects.map(project =>(

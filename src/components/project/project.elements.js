@@ -49,8 +49,9 @@ export const Title = styled.h2`
     text-align: left;
     font-size: 2rem;
     margin-bottom: 2rem;
-    h2{
+    span{
         margin-top: 0.5rem;
+        margin-left: 0.5rem;
         font-size: 0.8rem;
     }
 `

@@ -30,7 +30,7 @@ const Published = (props) => {
     <>
         <Title>
           Published Work
-          <h2>(Click in any square to acess the published website.)</h2>
+          <span>(Click in any square to acess the published website.)</span>
         </Title>
         <Posts>
           {projects.map(project =>(
