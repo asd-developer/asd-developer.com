@@ -9,16 +9,19 @@ const Published = (props) => {
         title: "Design Portfolio", 
         image: "published/andredesign.png",
         link: "https://www.andresoaresduarte.com",
+        key: 1,
       },
       {
         title: "Time 4 Changers", 
         image: "published/time4changers.png",
         link: "https://www.time4changers.com",
+        key: 2,
       },
       {
         title: "Saude Online", 
         image: "published/saudeonline.png",
         link: "https://saudeonline.pt",
+        key: 3,
       }
     ]
   );
@@ -31,7 +34,7 @@ const Published = (props) => {
         </Title>
         <Posts>
           {projects.map(project =>(
-            <PublishedPosts Title={project.title} image={project.image} link={project.link} style={{height: "100%"}}/>
+            <PublishedPosts Title={project.title} image={project.image} key={project.key} link={project.link} style={{height: "100%"}}/>
           ))}
         </Posts>
         

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContactsForm = styled.div`
     display: block;
-    margin: 0px auto;
+    margin: 6rem auto 6rem  auto;
     height: auto;
     width: 70%;
     background: rgb(57,40,209);

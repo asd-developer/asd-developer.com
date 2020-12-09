@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Social, SuccessNotification, ErrorNotification} from './contacts.elements'
-import firebase from 'firebase/app';
 
 
 

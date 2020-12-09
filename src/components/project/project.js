@@ -10,23 +10,27 @@ const Projects = (props) => {
         image: "projects/myreads.png",
         stack: "React, NodeJs, API",
         link: "https://github.com/asd-developer/MyReadsReactJsApp",
+        key: 1,
       },
       {
         title: "Mechanical Keyboard Builds", 
         image: "projects/keyboardbuilds.png",
         stack: "React, NodeJs, MongoDB, Bootstrap",
+        key: 2,
       },
       {
         title: "Weather App", 
         image: "projects/weatherproject.png",
         stack: "Javascript, CSS, NodeJs, Webpack, API",
         link: "https://github.com/asd-developer/weather-journal-app",
+        key: 3,
       },
       {
         title: "Hex Color Generator", 
         image: "projects/hexadecimalproject.png",
         stack: "React, CSS, AWS",
         link: "https://github.com/asd-developer/HexGeneratorApp",
+        key: 4,
       }
     ]
   );
@@ -39,7 +43,7 @@ const Projects = (props) => {
         </Title>
         <Posts>
           {projects.map(project =>(
-            <ProjectPosts Title={project.title} image={project.image} stack={project.stack} link={project.link}/>
+            <ProjectPosts Title={project.title} image={project.image} key={project.key} stack={project.stack} link={project.link}/>
           ))}
         </Posts>
         
