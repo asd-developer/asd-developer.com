@@ -4,21 +4,27 @@ import {ContactsForm, Form, OtherContacts, PhoneNumber, MyEmail, Curriculum, Soc
 
 
 const Contacts = (props) => {
+//STATE
+    //FORM STATE
     const [Value, setValue] = useState({
             name: '',
             email: '',
             message: ''
     })
 
+    //FORM ASSISTANT STATE
     const [FormSuccess, setFormSucess] = useState(false)
     const [FormError, setFormError] = useState(false)
     const [FormSession, setFormSession] = useState(0)
     const [DisableBt,setDisableBt] = useState(false)
 
+//HELPER FUNCTIONS
+    //CHANGES STATE ON INPUT CHANGE
     const handleChange = (event) =>{
         setValue({...Value,[event.target.name]: event.target.value});
     }
 
+    //SUBMITS FORM BY FETCHING THE FIREBASE API
     const submitForm = async (event) => {
         event.preventDefault()
         setDisableBt(true)

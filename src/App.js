@@ -22,13 +22,9 @@ import { MainContainer, CardContainer, StackContainer, Container, AboutContainer
 //Other
 import ScrollableAnchor,{configureAnchors} from 'react-scrollable-anchor'
 import { ScrollableLink } from 'react-update-url-on-scroll';
-/////
-//FIREBASE
-//import firebase from 'firebase/app'
-
 
 const App = (props) => {
-
+  //CONFIGURE ANCHOR OFFSET
   configureAnchors({offset: -200, scrollDuration: 500});
 
   return (
