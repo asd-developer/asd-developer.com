@@ -3,6 +3,8 @@ import PublishedPosts from './published-posts'
 import {Title, Posts} from './published.elements'
 
 const Published = (props) => {
+//STATE
+  //PROJECTS
   const [projects] = useState(
     [
       {
