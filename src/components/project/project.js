@@ -3,6 +3,8 @@ import ProjectPosts from './projectpost'
 import {Title, Posts} from './project.elements'
 
 const Projects = (props) => {
+//STATE
+  //PROJECTS
   const [projects] = useState(
     [
       {
