@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PostsContainer = styled.a`
     text-decoration: none;
-    margin: 0rem auto 0rem auto;
+    margin: 1rem auto 0rem auto;
     font-family: 'Lexend Deca', sans-serif;
     background-color: white;
     width: 95%;
