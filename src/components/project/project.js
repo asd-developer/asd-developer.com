@@ -41,7 +41,7 @@ const Projects = (props) => {
     <>
         <Title>
           Projects
-          <span>(Click in any square to acess the GitHub page.)</span>
+          <span>(Click in any square to access the GitHub page.)</span>
         </Title>
         <Posts>
           {projects.map(project =>(
